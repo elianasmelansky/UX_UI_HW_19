@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Montserrat&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    color: black;
+    background-color: #FAF5FF;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #937FAD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #D8E1FF
+}
+
+.home{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    padding: 75px 10%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.home-content{
+    background: #D8E1FF;
+    max-width: 100%;
+    padding: 75px;
+    box-shadow: 0px 0px 20px #594157;
+    left: 10%;
+    border-radius: 5px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    padding: 20px;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size:24px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.home-content p {
+    padding: 20px;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 300px;
+    height: 50px;
+    background: #937FAD;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-box:hover{
+    background-color:#594157;
+    color: white;
+}
+
+.workItem .button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    background: #937FAD;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.button a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color:#594157;
+    color: white;
+}
+
+.footer{
+    padding: 50px 10%;
+    background: #937FAD;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size:24px;
+    font-weight: bold;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-content{
+    background: #D8E1FF;
+    max-width: 100px;
+    padding: 75px;
+}
+
+.socials{
+    display: inline-flex;
+    align-items: center;
+    font-size: 32px;
+    color: #594157;
+}
+
+.adjust-line-height {
+    line-height: 1.5em;
+  }
+
+.img_deg {
+    float: left;
+    padding: 40px;
+}
+
+/* My UX Skills section coded using CSS flex */
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px;
+    padding: 50px;
+}
+
+.mySkills h1 {
+    font-size:24px;
+    font-weight: 700;
+    margin-left: 120px;
+}
+
+.flexChild {
+    width: 30%; 
+    margin: 20px;
+    padding: 20px;
+    background-color: #D8E1FF;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 20px #594157;
+}
+
+.flexChild img {
+    width: 50px; 
+    height: 50px; 
+    margin-bottom: 10px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .flexChild {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .flexChild {
+        width: 100%; 
+    }
+}
+
+/* My Work Section Constructed using CSS Grid */
+.myWork h1 {
+    font-size:24px;
+    font-weight: 700;
+    margin-left: 120px;
+}
+
+.myWork h3 {
+    font-size:24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: 
+        "project1 project2"
+        "project3 project4";
+    padding: 50px;
+}
+
+.workItem {
+    padding: 20px;
+    margin: 20px;
+    background-color: #D8E1FF;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 20px #594157;
+}
+
+.project1 {
+    grid-area: project1;
+}
+
+.project2 {
+    grid-area: project2;
+}
+
+/* Mobile Media Query */
+@media (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column; 
+    }
+
+    .flexChild {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    .workGrid {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto; 
+        grid-template-areas: 
+            "project1"
+            "project2"
+            "project3"
+            "project4";
+    }
+
+    /* Assign grid areas for mobile views */
+    .project1, .project2, .project3, .project4 {
+        grid-area: auto; 
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding: 50px 5%;
+    }
+
+    .home-content {
+        max-width: 100%;
+        left: 0;
+        padding: 50px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+        margin: 10px 0 20px;
+    }
+
+    .btn-box {
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
